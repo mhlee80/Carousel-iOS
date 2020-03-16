@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81A48542113A6EDFE41012E2 /* Pods_Carousel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA62E8A496DAC8EBA9DE50FF /* Pods_Carousel.framework */; };
 		82C5BE42241F58D000940EF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C5BE41241F58D000940EF3 /* AppDelegate.swift */; };
 		82C5BE44241F58D000940EF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C5BE43241F58D000940EF3 /* SceneDelegate.swift */; };
 		82C5BE46241F58D000940EF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C5BE45241F58D000940EF3 /* ViewController.swift */; };
 		82C5BE49241F58D000940EF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C5BE47241F58D000940EF3 /* Main.storyboard */; };
 		82C5BE4B241F58D200940EF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C5BE4A241F58D200940EF3 /* Assets.xcassets */; };
 		82C5BE4E241F58D200940EF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C5BE4C241F58D200940EF3 /* LaunchScreen.storyboard */; };
+		82C5BE5A241F592700940EF3 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C5BE58241F592700940EF3 /* iCarousel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F02AD2866701A7B208F6F56 /* Pods-Carousel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carousel.release.xcconfig"; path = "Target Support Files/Pods-Carousel/Pods-Carousel.release.xcconfig"; sourceTree = "<group>"; };
+		5944C3BC266FE01D24FF5D20 /* Pods-Carousel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carousel.debug.xcconfig"; path = "Target Support Files/Pods-Carousel/Pods-Carousel.debug.xcconfig"; sourceTree = "<group>"; };
 		82C5BE3E241F58D000940EF3 /* Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C5BE41241F58D000940EF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82C5BE43241F58D000940EF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		82C5BE4A241F58D200940EF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82C5BE4D241F58D200940EF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82C5BE4F241F58D200940EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82C5BE57241F592600940EF3 /* Carousel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Carousel-Bridging-Header.h"; sourceTree = "<group>"; };
+		82C5BE58241F592700940EF3 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		82C5BE59241F592700940EF3 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		AA62E8A496DAC8EBA9DE50FF /* Pods_Carousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81A48542113A6EDFE41012E2 /* Pods_Carousel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CBC10D2249355BEB6491099 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5944C3BC266FE01D24FF5D20 /* Pods-Carousel.debug.xcconfig */,
+				4F02AD2866701A7B208F6F56 /* Pods-Carousel.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		82C5BE35241F58D000940EF3 = {
 			isa = PBXGroup;
 			children = (
+				82C5BE55241F58DD00940EF3 /* Libraries */,
 				82C5BE40241F58D000940EF3 /* Carousel */,
 				82C5BE3F241F58D000940EF3 /* Products */,
+				2CBC10D2249355BEB6491099 /* Pods */,
+				ECC2FD7ABF65EC1DCE9BCBE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +85,34 @@
 				82C5BE4A241F58D200940EF3 /* Assets.xcassets */,
 				82C5BE4C241F58D200940EF3 /* LaunchScreen.storyboard */,
 				82C5BE4F241F58D200940EF3 /* Info.plist */,
+				82C5BE57241F592600940EF3 /* Carousel-Bridging-Header.h */,
 			);
 			path = Carousel;
+			sourceTree = "<group>";
+		};
+		82C5BE55241F58DD00940EF3 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				82C5BE56241F58E700940EF3 /* iCarousel */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		82C5BE56241F58E700940EF3 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				82C5BE59241F592700940EF3 /* iCarousel.h */,
+				82C5BE58241F592700940EF3 /* iCarousel.m */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		ECC2FD7ABF65EC1DCE9BCBE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA62E8A496DAC8EBA9DE50FF /* Pods_Carousel.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82C5BE52241F58D200940EF3 /* Build configuration list for PBXNativeTarget "Carousel" */;
 			buildPhases = (
+				F0988B3FB83642A9416A9799 /* [CP] Check Pods Manifest.lock */,
 				82C5BE3A241F58D000940EF3 /* Sources */,
 				82C5BE3B241F58D000940EF3 /* Frameworks */,
 				82C5BE3C241F58D000940EF3 /* Resources */,
+				DEA46313411DFE6F27D04346 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -99,6 +149,7 @@
 				TargetAttributes = {
 					82C5BE3D241F58D000940EF3 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -133,12 +184,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DEA46313411DFE6F27D04346 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Carousel/Pods-Carousel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Carousel/Pods-Carousel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Carousel/Pods-Carousel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0988B3FB83642A9416A9799 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Carousel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		82C5BE3A241F58D000940EF3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				82C5BE46241F58D000940EF3 /* ViewController.swift in Sources */,
+				82C5BE5A241F592700940EF3 /* iCarousel.m in Sources */,
 				82C5BE42241F58D000940EF3 /* AppDelegate.swift in Sources */,
 				82C5BE44241F58D000940EF3 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,8 +376,10 @@
 		};
 		82C5BE53241F58D200940EF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5944C3BC266FE01D24FF5D20 /* Pods-Carousel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DV97Z43DCT;
 				INFOPLIST_FILE = Carousel/Info.plist;
@@ -293,6 +389,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mhlee.Carousel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Carousel/Carousel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,8 +398,10 @@
 		};
 		82C5BE54241F58D200940EF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F02AD2866701A7B208F6F56 /* Pods-Carousel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DV97Z43DCT;
 				INFOPLIST_FILE = Carousel/Info.plist;
@@ -311,6 +411,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mhlee.Carousel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Carousel/Carousel-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
